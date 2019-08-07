@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  background: transparent;
+  border: none;
+  color: rgba($color: #000000, $alpha: 0.87);
+  font-weight: 500;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  outline: none !important;
+  padding: 8px 24px;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  height: 36px;
+  line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &:hover {
+    background-color: rgba(95, 99, 104, 0.039);
+  }
+
+  &:active {
+    background-color: rgba(95, 99, 104, 0.161) !important;
+  }
+}
+
+[contenteditable] {
+  outline: none;
+}
+
+[contentEditable="true"]:empty:not(:focus):before {
+  content: attr(data-placeholder);
+  cursor: text;
+  color: rgba($color: #a5a4a4, $alpha: 1);
+}

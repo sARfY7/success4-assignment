@@ -1,0 +1,16 @@
+<div
+  class="container-fluid p-0 d-flex justify-content-center align-items-center overlay"
+  [ngClass]="{ visible: modal.visible === true }"
+>
+  <div class="row modal-note">
+    <div contenteditable="true" class="col-12 modal-note__heading" #noteHeading>
+      {{ noteProperties.heading }}
+    </div>
+    <div contenteditable="true" class="col-12 modal-note__body" #noteBody>
+      {{ noteProperties.body }}
+    </div>
+    <div class="col-12 d-flex justify-content-end modal-note__footer">
+      <button (click)="saveNoteDetails()">Close</button>
+    </div>
+  </div>
+</div>
