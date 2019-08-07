@@ -12,6 +12,10 @@
       0 1px 3px 1px rgba(60, 64, 67, 0.149);
   }
 
+  &:hover > &__footer {
+    opacity: 1;
+  }
+
   &__heading {
     font-weight: 500;
     line-height: 24px;
@@ -23,5 +27,27 @@
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
+  }
+
+  &__footer {
+    padding-top: 8px;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+
+  &__action {
+    padding: 5px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    & > img {
+      width: 15px;
+    }
   }
 }

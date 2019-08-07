@@ -5,4 +5,13 @@
   <div class="col-12 note__body">
     {{ noteProperties.body }}
   </div>
+  <div class="col-12 d-flex note__footer">
+    <div class="note__action" (click)="deleteNote($event, noteProperties.id)">
+      <img
+        src="../../../assets/img/icons/delete.svg"
+        title="Delete"
+        alt="Delete"
+      />
+    </div>
+  </div>
 </div>

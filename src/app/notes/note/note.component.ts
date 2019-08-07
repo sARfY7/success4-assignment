@@ -17,4 +17,9 @@ export class NoteComponent implements OnInit {
     this.noteService.modal.visible = true;
     this.noteService.noteDetailEvent.emit(this.noteProperties);
   }
+
+  deleteNote(event: Event, id: number) {
+    event.stopPropagation();
+    this.noteService.deleteNote(id);
+  }
 }
