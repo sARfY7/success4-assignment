@@ -24,11 +24,11 @@ export class NoteService {
     //   body:
     //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sed ex consequatur rerum, error fugit quae possimus explicabo laudantium ipsa."
     // }
-    {
-      id: 1,
-      heading: "Hello World",
-      body: "This is the hello world of note making web app!"
-    }
+    // {
+    //   id: 1,
+    //   heading: "Hello World",
+    //   body: "This is the hello world of note making web app!"
+    // }
   ];
 
   modal: { visible: boolean } = { visible: false };
